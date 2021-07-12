@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Title = styled.h1`
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;    
+`
+
 export const Input = styled.input`
     border: 1px solid #ddd;
     height:1.5rem;
@@ -27,11 +33,25 @@ export const Button = styled.button`
     }
 `;
 
-export const Container = styled.div`
-    width: 100vw;
-    height: 100hw;
-    margin-top: 5rem;
+export const HomeContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+`
+
+export const Content = styled.div`
+    width: 100vw;   
     display: flex;
     align-items: center;
     justify-content: center;
+`
+export const ErrorMsg = styled.span`
+    display: block;
+    font-size: 0.65rem;
+    color: red;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-top: 1rem;
 `
